@@ -9,7 +9,7 @@ This is an unofficial SDK for PayMaya using Java but offers improvements over th
 You can install the package via gradle:
 
 1. Add this to your *root build.gradle* file
-```bash
+```gradle
 allprojects {
     repositories {
         ...
@@ -19,7 +19,7 @@ allprojects {
 ```
 
 2. Add this to your *app-level build.gradle* file
-```bash
+```gradle
 dependencies {
     implementation 'com.github.CoreProc:paymaya-sdk-android:{latest_version}'
 }
