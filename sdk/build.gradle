@@ -7,7 +7,7 @@ repositories {
     jcenter()
 }
 
-group = 'com.github.kaelitokael'
+group = 'com.github.CoreProc'
 
 sourceSets {
     main.java.srcDirs += 'src/main'
