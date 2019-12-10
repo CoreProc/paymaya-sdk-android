@@ -43,6 +43,13 @@ val payMayaConfig =
     else PayMayaConfig.PRODUCTION
 ```
 
+### Enable Logging
+
+By default, logging is enabled in *PayMayaConfig.SANDBOX* and disabled in *PayMayaConfig.PRODUCTION*. To manually enable logging:
+```kotlin
+Logger.DEBUGGABLE = true
+```
+
 ### Get Payment Token Id
 
 Here is an example of how to use this SDK with getting Payment Token Id.
@@ -67,7 +74,7 @@ val card = Card(cardNumber, expMonth, expYear, cvv)
 ```
 
 3. Create an instance of GetPaymentTokenCallback.
-```
+``` kotlin
 val getPaymentTokenCallback = object: GetPaymentTokenCallback {
     override fun onStart() {}
     override fun onEnd() {}
